@@ -1,61 +1,142 @@
-# Team Task Manager — Team Task Manager
+# 🚀 Team Task Manager (Full-Stack)
 
-A full-stack MERN application for team task management with JWT auth and role-based access control.
+A full-stack web application that allows teams to create projects, assign tasks, and track progress with role-based access control (Admin/Member).
 
-## Prerequisites
+---
 
-- [Node.js](https://nodejs.org/) v18+
-- [VS Code](https://code.visualstudio.com/)
-- MongoDB (optional — app uses in-memory DB if MongoDB is not installed)
+## 📌 Features
 
-## How to Run
+### 🔐 Authentication
+- User Signup & Login  
+- Secure authentication using JWT  
+- Password hashing with bcrypt  
 
-### Terminal 1 — Backend Server
+### 👥 Role-Based Access
+- Admin
+  - Create & manage projects  
+  - Assign tasks to members  
+- Member
+  - View assigned tasks  
+  - Update task status  
 
-```bash
-cd server
-npm install
-npm run dev
-```
+### 📁 Project Management
+- Create and manage multiple projects  
+- Add team members to projects  
 
-Server starts at `http://localhost:5001`. If local MongoDB is not running, an in-memory database is used automatically.
+### ✅ Task Management
+- Create tasks with:
+  - Title  
+  - Description  
+  - Priority (Low/Medium/High)  
+  - Due Date  
+- Assign tasks to users  
+- Update task status:
+  - Pending  
+  - In Progress  
+  - Completed  
 
-### Terminal 2 — Frontend
+### 📊 Dashboard
+- View total tasks  
+- Track completed & pending tasks  
+- Identify overdue tasks  
 
-```bash
-npm install
-npm run dev
-```
+---
 
-Frontend starts at `http://localhost:8080`. API calls are proxied to the backend automatically.
+## ⚙️ Tech Stack
 
-## For Production / Railway Deployment
+- Frontend: React  
+- Backend: Node.js + Express  
+- Database: MongoDB (NoSQL)  
+- Authentication: JWT  
 
-Set these environment variables:
+---
 
-| Variable     | Example                                       |
-|-------------|-----------------------------------------------|
-| `PORT`      | `5001`                                         |
-| `MONGO_URI` | `mongodb+srv://user:pass@cluster.mongodb.net/team_task_manager_db` |
-| `JWT_SECRET`| `your_super_secret_key`                        |
+## 🗄️ Database Structure
 
-## Features
+### Users
+- name  
+- email  
+- password  
+- role (Admin/Member)  
 
-- **Authentication** — Signup / Login with JWT
-- **Role-Based Access** — Admin can create projects & assign tasks; Members can update their own tasks
-- **Projects** — Create, view, delete
-- **Tasks** — Create, assign, drag-to-update status (Kanban board)
-- **Dashboard** — Stats overview (total, completed, pending, overdue)
-- **Reports** — Charts and trends
-# Team-Task-Manager-
-# Team-Task-Manager-
-# Team-Task-Manager
-# Team-Task-Manager
-# TeamTaskManager
-# TeamTaskManager-
-# TeamTaskManager
-# TeamTaskManager
-# TeamTaskManagerr
-# TeamTaskManagerr
-# TeamTaskManagerr
-# TeamTaskManagerr
+### Projects
+- title  
+- description  
+- members  
+
+### Tasks
+- title  
+- description  
+- assignedTo  
+- projectId  
+- status  
+- dueDate  
+
+---
+
+## 🔗 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|--------|-------------|
+| POST | /api/auth/signup | Register user |
+| POST | /api/auth/login | Login user |
+| GET | /api/projects | Get all projects |
+| POST | /api/projects | Create project |
+| POST | /api/tasks | Create task |
+| PUT | /api/tasks/:id | Update task |
+
+---
+
+## 🌐 Deployment
+
+The application is deployed using Railway
+
+### 🔗 Live URL
+👉 Add your deployed link here
+
+---
+
+## 📦 Installation & Setup
+
+### 1️⃣ Clone Repository
+bash git clone https://github.com/Adiii001-thkr/TeamTaskManagerr.git cd TeamTaskManagerr 
+
+### 2️⃣ Backend Setup
+bash cd server npm install npm start 
+
+### 3️⃣ Frontend Setup
+bash cd client npm install npm run dev 
+
+---
+
+## 🔐 Environment Variables
+
+Create a .env file in backend:
+
+MONGO_URI=your_mongodb_connection JWT_SECRET=your_secret_key PORT=5000
+
+---
+
+## 🎥 Demo Video
+👉 Add your 2–5 minute demo video link here
+
+---
+
+## 📂 GitHub Repository
+👉 GitHub  
+https://github.com/Adiii001-thkr/TeamTaskManagerr
+
+---
+
+## 🎯 Conclusion
+
+This project demonstrates:
+- Full-stack development  
+- REST API design  
+- Role-based authentication  
+- Real-world task management system  
+
+---
+
+## 👨‍💻 Author
+**Aditya Thaku
