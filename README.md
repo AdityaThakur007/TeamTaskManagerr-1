@@ -77,7 +77,7 @@ A full-stack web application that allows teams to create projects, assign tasks,
 ## 🔗 API Endpoints
 
 | Method | Endpoint | Description |
-|--------|--------|-------------|
+|--------|---------|------------|
 | POST | /api/auth/signup | Register user |
 | POST | /api/auth/login | Login user |
 | GET | /api/projects | Get all projects |
@@ -89,10 +89,15 @@ A full-stack web application that allows teams to create projects, assign tasks,
 
 ## 🌐 Deployment
 
-The application is deployed using Railway
+The application is deployed using Railway.
 
-### 🔗 Live URL
-👉 Add your deployed link here
+### 🔗 Live URL  
+👉 https://team-task-managerr-ad3hxuh34-adiii001-thkrs-projects.vercel.app/
+
+---
+
+## 🎥 Demo Video  
+👉 Watch Demo Video
 
 ---
 
@@ -117,14 +122,8 @@ MONGO_URI=your_mongodb_connection JWT_SECRET=your_secret_key PORT=5000
 
 ---
 
-## 🎥 Demo Video
-👉 Add your 2–5 minute demo video link here
-
----
-
-## 📂 GitHub Repository
-👉 GitHub  
-https://github.com/Adiii001-thkr/TeamTaskManagerr
+## 📂 GitHub Repository  
+👉 https://github.com/Adiii001-thkr/TeamTaskManagerr  
 
 ---
 
@@ -138,5 +137,7 @@ This project demonstrates:
 
 ---
 
-## 👨‍💻 Author
-**Aditya Thaku
+## 👨‍💻 Author  
+
+Aditya Thakur  
+- GitHub: https://github.com/Adiii001-thk
