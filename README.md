@@ -1,4 +1,4 @@
-# Taskify — Team Task Manager
+# Team Task Manager — Team Task Manager
 
 A full-stack MERN application for team task management with JWT auth and role-based access control.
 
@@ -36,7 +36,7 @@ Set these environment variables:
 | Variable     | Example                                       |
 |-------------|-----------------------------------------------|
 | `PORT`      | `5001`                                         |
-| `MONGO_URI` | `mongodb+srv://user:pass@cluster.mongodb.net/taskify_db` |
+| `MONGO_URI` | `mongodb+srv://user:pass@cluster.mongodb.net/team_task_manager_db` |
 | `JWT_SECRET`| `your_super_secret_key`                        |
 
 ## Features
@@ -47,3 +47,4 @@ Set these environment variables:
 - **Tasks** — Create, assign, drag-to-update status (Kanban board)
 - **Dashboard** — Stats overview (total, completed, pending, overdue)
 - **Reports** — Charts and trends
+# Team-Task-Manager-
