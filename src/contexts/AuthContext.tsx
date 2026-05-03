@@ -55,6 +55,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setRole(null);
     localStorage.removeItem("user");
     localStorage.removeItem("token");
+    window.location.href = "/portal";
   }
 
   return (
