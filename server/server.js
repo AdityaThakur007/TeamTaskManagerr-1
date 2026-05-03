@@ -11,15 +11,26 @@ import dashboardRoutes from "./routes/dashboardRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import { errorHandler } from "./middleware/errorMiddleware.js";
 
-// Load environment variables FIRST
-dotenv.config();
+// ── Resolve __dirname for ESM ─────────────────────────────────────
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// ── Load .env from THIS file's directory (server/.env) ───────────
+// Using an explicit path prevents the "token failed" bug that occurs
+// when the server is started from the project root (node server/server.js)
+dotenv.config({ path: path.join(__dirname, ".env") });
+
+// Guard: crash early if JWT_SECRET is missing so the bug is obvious
+if (!process.env.JWT_SECRET) {
+  console.error("❌ FATAL: JWT_SECRET is not set. Check server/.env");
+  process.exit(1);
+}
+console.log("✅ JWT_SECRET loaded:", process.env.JWT_SECRET.slice(0, 6) + "...");
 
 // Connect to database
 connectDB();
 
 const app = express();
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 // ── Middleware ────────────────────────────────────────────────────
 app.use(cors({
