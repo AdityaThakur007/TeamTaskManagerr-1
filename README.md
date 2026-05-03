@@ -87,12 +87,8 @@ A full-stack web application that allows teams to create projects, assign tasks,
 
 ---
 
-## 🌐 Deployment
-
-The application is deployed using Railway
-
 ### 🔗 Live URL
-👉 Add your deployed link here
+https://team-task-managerr-ad3hxuh34-adiii001-thkrs-projects.vercel.app/
 
 ---
 
@@ -118,7 +114,7 @@ MONGO_URI=your_mongodb_connection JWT_SECRET=your_secret_key PORT=5000
 ---
 
 ## 🎥 Demo Video
-👉 Add your 2–5 minute demo video link here
+https://drive.google.com/file/d/1oAB4S2KFPCEOM_evz2tSxQEoJXfe_Nqq/view
 
 ---
 
